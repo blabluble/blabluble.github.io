@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ivy-module version="2.0" xmlns:e="http://ant.apache.org/ivy/extra">
-	<info organisation="com.edulify" module="currency-converter_2.10" revision="1.1" status="release" publication="20130429105643">
+	<info organisation="com.edulify" module="currency-converter_2.10" revision="1.1" status="release" publication="20130429133511">
 		<description>
 		currency-converter
 		</description>
