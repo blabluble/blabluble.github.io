@@ -1,3 +1,3 @@
-# Sitemap Generator Module
+# Edulify.com Open Source
 
-For informations about issues, licence, how to configure and use, please visit our [code repository](https://github.com/blabluble/play-sitemap-module).
+Our open source projects page. Also, our repository for Playframework modules and plugins. 
