@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ivy-module version="2.0" xmlns:e="http://ant.apache.org/ivy/extra">
-	<info organisation="com.edulify" module="play-hirakicp_2.10" revision="0.0.3" status="release" publication="20140406022607">
+	<info organisation="com.edulify" module="play-hirakicp_2.10" revision="0.0.3" status="release" publication="20140406141357">
 		<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 		<description homepage="http://blabluble.github.io/play-hikaricp.edulify.com/">
 		HikariCP Plugin for Play Framework 2.2.x

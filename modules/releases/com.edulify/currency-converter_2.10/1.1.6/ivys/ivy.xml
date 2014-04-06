@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ivy-module version="2.0" xmlns:e="http://ant.apache.org/ivy/extra">
-	<info organisation="com.edulify" module="currency-converter_2.10" revision="1.1.6" status="release" publication="20140406022539">
+	<info organisation="com.edulify" module="currency-converter_2.10" revision="1.1.6" status="release" publication="20140406141203">
 		<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 		<description homepage="https://edulify.github.io/play-currency-converter-module.edulify.com">
 		This is a play module for currency conversion.
