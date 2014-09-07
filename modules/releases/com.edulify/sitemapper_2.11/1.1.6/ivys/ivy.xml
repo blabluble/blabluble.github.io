@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ivy-module version="2.0" xmlns:e="http://ant.apache.org/ivy/extra">
-	<info organisation="com.edulify" module="sitemapper_2.11" revision="1.1.6" status="release" publication="20140907171100">
+	<info organisation="com.edulify" module="sitemapper_2.11" revision="1.1.6" status="release" publication="20140907172219">
 		<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 		<description homepage="https://edulify.github.io/play-sitemap-module.edulify.com">
 		Playframework module to automatically create sitemaps
