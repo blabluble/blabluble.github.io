@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ivy-module version="2.0" xmlns:e="http://ant.apache.org/ivy/extra">
-	<info organisation="com.typesafe.play" module="play-ebean_2.10" revision="1.0.0-SNAPSHOT" status="integration" publication="20150106165625">
+	<info organisation="com.typesafe.play" module="play-ebean_2.10" revision="1.0.0-SNAPSHOT" status="integration" publication="20150310225955">
 		<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 		<description homepage="https://github.com/playframework/play-ebean">
 		play-ebean
@@ -31,8 +31,8 @@
 	<dependencies>
 		
 		<dependency org="org.scala-lang" name="scala-library" rev="2.10.4" conf="compile->default(compile)"/>
-		<dependency org="com.typesafe.play" name="play-java-jdbc_2.10" rev="2.4.0-M2" conf="compile->default(compile)"/>
-		<dependency org="org.avaje.ebeanorm" name="avaje-ebeanorm" rev="4.5.2" conf="compile->default(compile)"/>
-		<dependency org="org.avaje.ebeanorm" name="avaje-ebeanorm-agent" rev="4.5.1" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.play" name="play-java-jdbc_2.10" rev="2.4.0-M3" conf="compile->default(compile)"/>
+		<dependency org="org.avaje.ebeanorm" name="avaje-ebeanorm" rev="4.4.1" conf="compile->default(compile)"/>
+		<dependency org="org.avaje.ebeanorm" name="avaje-ebeanorm-agent" rev="4.1.10" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>
