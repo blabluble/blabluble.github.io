@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Edulify Open Source Projects</title>
+		<link rel="stylesheet" href="/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/css/docs.min.css">
+		<link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/default.min.css">
+	</head>
+	<body>
+		<!-- Docs master nav -->
+		<header class="navbar navbar-static-top bs-docs-nav" id="top" role="banner">
+			<div class="container">
+				<div class="navbar-header">
+					<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="#" class="navbar-brand">Edulify.com</a>
+				</div>
+				<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#projects">Projects</a></li>
+						<li><a href="https://github.com/edulify">Github</a></li>
+						<li><a href="http://techtalk.edulify.com/">Blog</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main class="bs-docs-masthead" id="content" role="main">
+			<div class="container">
+				<h1>Edulify.com Open Source</h1>
+				<p class="lead">This is the repository where we release our plugins and open source projects. We are adding this page to avoid confusion if this is a valid repository or not. It is. :-)</p>
+			</div>
+		</main>
+
+				<h2>Configuring Edulify Releases Repository</h2>
+				<p>Here you can see how to configure our releases repository so that you can use our modules and plugins.</p>
+				<hr />
+				<h3>Using <code>project/Build.scala</code>:</h3>
+				<div class="highlight"><pre><code class="scala">import sbt._
+import Keys._
+import play.Project._
+
+object ApplicationBuild extends Build {
+
+  val appName         = "your-app"
+  val appVersion      = "1.0-SNAPSHOT"
+
+  val appDependencies = Seq(
+    // Add your project dependencies here,
+    javaCore,
+    javaJdbc,
+    javaEbean
+  )
+
+  val main = play.Project(appName, appVersion, appDependencies).settings(
+    // Add the line bellow to configure our repository
+    resolvers += Resolver.url("Edulify Repository", url("http://edulify.github.io/modules/releases/"))(Resolver.ivyStylePatterns)
+  )
+}</code></pre></div>
+
+				<hr />
+				<h3>Using <code>build.sbt</code></h3>
+				<p>Just add the following line in your <code>build.sbt</code>:</p>
+				<div class="highlight"><pre><code class="scala">resolvers += Resolver.url("Edulify Repository", url("http://edulify.github.io/modules/releases/"))(Resolver.ivyStylePatterns)</code></pre></div>
+
+			</div>
+		</div>
+
+		<script src="/js/jquery.min.js"></script>
+		<script src="/js/bootstrap.min.js"></script>
+		<script src="http://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$('pre code').each(function(i, e) {hljs.highlightBlock(e)});
+			});
+		</script>
+	</body>
+</html>
