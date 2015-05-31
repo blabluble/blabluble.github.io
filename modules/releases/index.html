@@ -59,14 +59,14 @@ object ApplicationBuild extends Build {
 
   val main = play.Project(appName, appVersion, appDependencies).settings(
     // Add the line bellow to configure our repository
-    resolvers += Resolver.url("Edulify Repository", url("http://edulify.github.io/modules/releases/"))(Resolver.ivyStylePatterns)
+    resolvers += Resolver.url("Edulify Repository", url("https://edulify.github.io/modules/releases/"))(Resolver.ivyStylePatterns)
   )
 }</code></pre></div>
 
 				<hr />
 				<h3>Using <code>build.sbt</code></h3>
 				<p>Just add the following line in your <code>build.sbt</code>:</p>
-				<div class="highlight"><pre><code class="scala">resolvers += Resolver.url("Edulify Repository", url("http://edulify.github.io/modules/releases/"))(Resolver.ivyStylePatterns)</code></pre></div>
+				<div class="highlight"><pre><code class="scala">resolvers += Resolver.url("Edulify Repository", url("https://edulify.github.io/modules/releases/"))(Resolver.ivyStylePatterns)</code></pre></div>
 
 			</div>
 		</div>

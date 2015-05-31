@@ -48,7 +48,7 @@
 								<hr />
 								<p>A <a href="http://www.playframework.com/">Playframework</a> module that automatically creates <a href="http://www.sitemaps.org/">sitemaps</a>.</p>
 								<p>
-									<a href="http://edulify.github.io/play-sitemap-module.edulify.com" class="btn btn-primary" role="button">Website</a>
+									<a href="https://edulify.github.io/play-sitemap-module.edulify.com" class="btn btn-primary" role="button">Website</a>
 									<a href="https://github.com/edulify/play-sitemap-module.edulify.com" class="btn btn-default" role="button">Gitub Repository</a>
 								</p>
 							</div>
@@ -125,14 +125,14 @@ object ApplicationBuild extends Build {
 
   val main = play.Project(appName, appVersion, appDependencies).settings(
     // Add the line bellow to configure our repository
-    resolvers += Resolver.url("Edulify Repository", url("http://edulify.github.io/modules/releases/"))(Resolver.ivyStylePatterns)
+    resolvers += Resolver.url("Edulify Repository", url("https://edulify.github.io/modules/releases/"))(Resolver.ivyStylePatterns)
   )
 }</code></pre></div>
 
 				<hr />
 				<h3>Using <code>build.sbt</code></h3>
 				<p>Just add the following line in your <code>build.sbt</code>:</p>
-				<div class="highlight"><pre><code class="scala">resolvers += Resolver.url("Edulify Repository", url("http://edulify.github.io/modules/releases/"))(Resolver.ivyStylePatterns)</code></pre></div>
+				<div class="highlight"><pre><code class="scala">resolvers += Resolver.url("Edulify Repository", url("https://edulify.github.io/modules/releases/"))(Resolver.ivyStylePatterns)</code></pre></div>
 
 			</div>
 		</div>
